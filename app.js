@@ -7,8 +7,8 @@ const app = new express();
 app.use(bodyparser.json());
 
 app.use(cors());
-app.use(express.json());
-// app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 // console.log("body"+ req.body);
 app.post('/signup',function(req,res){
     res.header("Access-Control-Allow-Origin",'*');
