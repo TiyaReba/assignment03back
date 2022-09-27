@@ -104,7 +104,7 @@ app.delete('/remove/:id',(req,res)=>{
   })
 
 //   to update data
-app.put('update',(req,res)=>{
+app.put('/update',(req,res)=>{
     console.log(req.body)
     id=req.body._id,
     bookname=req.body.bookname,
