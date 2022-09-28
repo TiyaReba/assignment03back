@@ -124,7 +124,7 @@ app.put('/update',(req,res)=>{
    })
  })
 
-app.get('/books/:id',(req,res)=>{
+app.get('/:id',(req,res)=>{
     console.log("getedit")
     res.header("Access-Control-Allow-Origin",'*');
     res.header("Access-Control-Allow-method:GET,POST,PUT,DELETE");
