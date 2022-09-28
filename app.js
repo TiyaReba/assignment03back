@@ -105,6 +105,8 @@ app.delete('/remove/:id',(req,res)=>{
 
 //   to update data
 app.put('/update',(req,res)=>{
+    res.header("Access-Control-Allow-Origin",'*');
+    res.header("Access-Control-Allow-method:GET,POST,PUT,DELETE");
     console.log(req.body)
     id=req.body._id,
     bookname=req.body.bookname,
